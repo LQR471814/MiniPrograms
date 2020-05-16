@@ -152,6 +152,8 @@ The way the thresholds determine the character to be used is iterating from the 
 }
 ```
 
+From `BALENCED.json` color palette
+
 ### **Using your custom Color Palette or custom Character set**
 
 To "install" these, you can put Color palettes in the folder named `palettes` , characters sets go in the folder named `characters`
@@ -166,9 +168,9 @@ Note: An External library used to do ANSI coloring
 
 <https://pypi.org/project/Colr/>
 
-Note 2: Because I cannot seem to find an ASCII art viewer I made one myself with WxPython
+Note 2: Because I cannot seem to find an ASCII art viewer I made one myself with WxPython (You probably want to use this when using experimental ANSI colored mode)
 
-`TODO: Will post link here when I finish the github for it`
+https://github.com/LQR471814/MiniPrograms/tree/ASCII-Art-Viewer
 
 ### Command Line Arguments
 
