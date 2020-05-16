@@ -172,6 +172,10 @@ Note 2: Because I cannot seem to find an ASCII art viewer I made one myself with
 
 <https://github.com/LQR471814/MiniPrograms/tree/ASCII-Art-Viewer>
 
+Note 3: When building with PyInstaller (Cause that's what I use to build python files) you should add hidden import `pkg_resources.py2_warn`
+
+`py -m PyInstaller --hidden-import='pkg_resources.py2_warn' .\ASCIIArtByImage.py`
+
 ### Command Line Arguments
 
 ### **Required Parameters**
