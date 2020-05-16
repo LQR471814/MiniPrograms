@@ -1,6 +1,6 @@
 # Mini Programs
 
-A couple of small programs I make. Each program is in a different branch.
+A couple of small programs I make. Each program's "repository" is in a different branch.
 
 ## List
 
