@@ -9,5 +9,7 @@
 
 (These key combinations will not be sent to other programs)
 
-alt + f = Toggle cps increase
-alt + q = Quit program
+```text
+[ALT + f] = Toggle cps increase
+[ALT + q] = Quit program
+```
