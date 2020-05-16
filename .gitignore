@@ -1,0 +1,4 @@
+AsciiArtViewer.spec
+build/
+dist/
+__pycache__/
