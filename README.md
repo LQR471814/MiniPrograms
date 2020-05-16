@@ -1,9 +1,2 @@
-# Mini Programs
-
-A couple of small programs I make. Each program is in a different branch.
-
-## List
-
-- ASCII Art From Image
-- ASCII Art Viewer (WxPython)
-- A thing to increase your CPS (Clicks Per Second)
+# ASCII-Art-Viewer
+An ASCII Art viewer made using WxPython
