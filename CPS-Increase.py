@@ -1,5 +1,6 @@
 import mouse
 import keyboard
+import sys
 
 toggled = -1
 x = 0
@@ -36,7 +37,9 @@ def toggle():
     toggled *= -1
 
 def onQuit():
-    quit()
+    mouse.unhook_all()
+    keyboard.unhook_all()
+    sys.exit(0)
 
 mouse.on_click(onLeft)
 mouse.on_right_click(onRight)
