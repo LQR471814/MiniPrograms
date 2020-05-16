@@ -8,5 +8,6 @@
 ## Usage
 
 (These key combinations will not be sent to other programs)
+
 alt + f = Toggle cps increase
 alt + q = Quit program
