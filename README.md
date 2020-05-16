@@ -1,9 +1,12 @@
-# Mini Programs
+# Increase your CPS (Clicks Per Second) in Minecraft and other programs!
 
-A couple of small programs I make. Each program is in a different branch.
+## External Dependencies
 
-## List
+- Mouse <https://pypi.org/project/mouse/>
+- Keyboard <https://pypi.org/project/keyboard/>
 
-- ASCII Art From Image
-- ASCII Art Viewer (WxPython)
-- A thing to increase your CPS (Clicks Per Second)
+## Usage
+
+(These key combinations will not be sent to other programs)
+alt + f = Toggle cps increase
+alt + q = Quit program
