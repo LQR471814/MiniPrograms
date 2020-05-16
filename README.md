@@ -170,7 +170,7 @@ Note: An External library used to do ANSI coloring
 
 Note 2: Because I cannot seem to find an ASCII art viewer I made one myself with WxPython (You probably want to use this when using experimental ANSI colored mode)
 
-https://github.com/LQR471814/MiniPrograms/tree/ASCII-Art-Viewer
+<https://github.com/LQR471814/MiniPrograms/tree/ASCII-Art-Viewer>
 
 ### Command Line Arguments
 
