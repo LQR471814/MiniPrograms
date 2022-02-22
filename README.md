@@ -1,8 +1,8 @@
-# ASCII-Art-Viewer
+## ASCII-Art-Viewer
 
 An ASCII Art viewer made using WxPython
 
-## Controls
+### Controls
 
 ```text
 [Arrow Keys] = Pan
@@ -16,7 +16,7 @@ An ASCII Art viewer made using WxPython
 [ESC] = Quit
 ```
 
-## Experimental ANSI Color Support
+### Experimental ANSI Color Support
 
 The Experimental ANSI Color rendering works by taking text colored with ANSI escape sequences and converting it into two lists. One contains each character that shall be colored, and it's corresponding list contains the color value for each corresponding character.
 
