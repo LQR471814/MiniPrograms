@@ -1,11 +1,11 @@
-# Increase your CPS (Clicks Per Second) in Minecraft and other programs!
+## Increase your CPS (Clicks Per Second) in Minecraft and other programs!
 
-## External Dependencies
+### Dependencies
 
 - Mouse <https://pypi.org/project/mouse/>
 - Keyboard <https://pypi.org/project/keyboard/>
 
-## Usage
+### Usage
 
 (These key combinations will not be sent to other programs)
 
