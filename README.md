@@ -1,6 +1,6 @@
 ## ASCII Art From Image
 
-### Make ASCII art just by inputting an image!
+***Make ASCII art just by inputting an image!***
 
 ### Command Line Arguments
 
