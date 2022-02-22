@@ -1,46 +1,45 @@
-# ASCII Art From Image
+## ASCII Art From Image
 
 ### Make ASCII art just by inputting an image!
 
-## Command Line Arguments
+### Command Line Arguments
 
-### **Required Parameters**
+#### **Required Parameters**
 
-#### `-i | --image-input Ex. /path/to/your/image.png`
+```text
+-i | --image-input
+Path of the image you want to convert
 
-Input the path to the image you want to convert
+-o | --text-output
+Path of the destination of the text
+```
 
-#### `-o | --text-output Ex. /destination/path/output.txt`
+#### **Parameters that can be set during program runtime**
 
-Input the path to the destination of the text
+```text
+-ch | --char-set
+Path of the character set the program will use
 
-### **Parameters with Choice during program runtime**
+-pal | --palette-set
+Path of the palette set the program will use
+```
 
-#### `-ch | --char-set Ex. /path/to/your/character_set.json`
+#### **Parameters with Defaults**
 
-Input the path of the character set the program will use.
+```text
+-sV | --scale-vertical
+The vertical scale of the image. Use -1 or leave this parameter blank for default image resolution
 
-#### `-pal | --palette-set Ex. /path/to/your/palette_set.json`
+-sH | --scale-horizontal
+The horizontal scale of the image. Use -1 or leave this parameter blank for default image resolution
 
-Input the path of the palette set the program will use
+-s | --global-scale
+The global scale of an image. Input a percentage expressed as a decimal. (Ex. 22% = 0.22)
+```
 
-### **Parameters with Defaults**
+### Sets and Palettes
 
-#### `-sV | --scale-vertical Ex. 1280`
-
-Input the vertical scale of the image. This will stretch the image. Input -1 or leave this parameter blank for default image resolution
-
-#### `-sV | --scale-vertical Ex. 720`
-
-Input the horizontal scale of the image. This will stretch the image. Input -1 or leave this parameter blank for default image resolution
-
-#### `-s | --global-scale Ex. 0.22`
-
-Input the global scale of an image. This will scale the image on both sides, vertical and horizontal, you should input a percentage expressed as a decimal. (Ex. 22% = 0.22)
-
-## Sets and Palettes
-
-### **Character Sets**
+#### **Character Sets**
 
 Character sets determine what characters you will use in the generated text.
 
@@ -77,11 +76,7 @@ Character sets determine what characters you will use in the generated text.
 
 The syntax for the character set in a JSON file format is as follows:
 
-The keys are from "b0" to "b4"
-
-b0 is the character symbolizing the brightest color.
-
-b4 is the character symbolizing the darkest color.
+The keys are from `b0` to `b4`. `b0` is the character symbolizing the brightest color. `b4` is the character symbolizing the darkest color.
 
 #### Example
 
@@ -130,13 +125,7 @@ Color sets define the threshold of what character to be used according to it's c
 
 `HYBRID` character set w/ `BRIGHT` color palette. Scale is `0.1`
 
-The syntax of the color set is as follows:
-
-The keys are "b0" to "b4"
-
-b0 is the threshold of the brightest color
-
-b4 is the threshold of the darkest color
+The keys are `b0` to `b4`. `b0` is the threshold of the brightest color `b4` is the threshold of the darkest color
 
 The way the thresholds determine the character to be used is iterating from the darkest key value and if that key value is larger than the brightness value of a pixel in the image it will insert the corresponding character to the brightness key value.
 
@@ -160,48 +149,14 @@ To "install" these, you can put Color palettes in the folder named `palettes` , 
 
 Another method is just referencing the path of your Color palette or your Character set through command line arguments, namely the arguments `-ch / --char-set` for Character sets and `-pal / --palette-set` for Color palettes
 
-## Experimental Color ASCII Art Generation with ANSI
+### Experimental Color ASCII Art Generation with ANSI
 
-### Notes
+#### Notes
 
-Note: An External library used to do ANSI coloring
-
-<https://pypi.org/project/Colr/>
-
-Note 2: Because I cannot seem to find an ASCII art viewer I made one myself with WxPython (You probably want to use this when using experimental ANSI colored mode)
+Note: Because I cannot seem to find an ASCII art viewer I made one myself with WxPython (You probably want to use this when using experimental ANSI colored mode)
 
 <https://github.com/LQR471814/MiniPrograms/tree/ASCII-Art-Viewer>
 
-Note 3: When building with PyInstaller (Cause that's what I use to build python files) you should add hidden import `pkg_resources.py2_warn`
+Note: When building with PyInstaller you should add hidden import `pkg_resources.py2_warn`
 
 `py -m PyInstaller --hidden-import='pkg_resources.py2_warn' .\ASCIIArtByImage.py`
-
-### Command Line Arguments
-
-### **Required Parameters**
-
-#### `-i | --image-input Ex. /path/to/your/image.png`
-
-Input the path to the image you want to convert
-
-#### `-o | --text-output Ex. /destination/path/output.txt`
-
-Input the path to the destination of the text
-
-#### `-c | --char Ex. #`
-
-The character that will be used for all brightness values although it will be colored according to each pixel.
-
-### **Parameters with Defaults**
-
-#### `-sV | --scale-vertical Ex. 1280`
-
-Input the vertical scale of the image. This will stretch the image. Input -1 or leave this parameter blank for default image resolution
-
-#### `-sV | --scale-vertical Ex. 720`
-
-Input the horizontal scale of the image. This will stretch the image. Input -1 or leave this parameter blank for default image resolution
-
-#### `-s | --global-scale Ex. 0.22`
-
-Input the global scale of an image. This will scale the image on both sides, vertical and horizontal, you should input a percentage expressed as a decimal. (Ex. 22% = 0.22)
